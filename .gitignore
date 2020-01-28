@@ -2,4 +2,7 @@
 __PYCACHE__
 .idea/workspace.xml
 .idea/task.xml
-
+node_modules
+bourbon
+sass/*.css
+sass/*.css.map
