@@ -1,0 +1,35 @@
+.button
+	&.has-dropdown:after
+		+arrow($white)
+		right: 1em
+	&.is-list-button
+		margin-bottom: 0.5em
+		.fa-stack
+			position: absolute !important
+			left: 1em !important
+
+/* マウスオーバーで日本語 */
+.hover-trancelation
+	&:hover
+		span.hover-trance-text
+			&:nth-child(1)
+				display: none
+			&:nth-child(2)
+				display: inline-block
+	span.hover-trance-text
+		display: inline-block
+		width: 10em
+		text-align: center
+		&:nth-child(1)
+			display: inline-block
+		&:nth-child(2)
+			display: none
+
+/* ナビバーのdisable */
+
+.navbar.is-primary .navbar-start > .navbar-item,
+	&.disabled 
+		color: darken($primary, 20%)
+		&:hover
+			color: darken($primary, 30%)
+

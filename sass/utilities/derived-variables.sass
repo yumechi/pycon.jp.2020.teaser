@@ -1,0 +1,96 @@
+$primary: $brand-primary !default
+$secondary: $brand-secondary !default
+
+$info: $brand-info !default
+$emphasis: $brand-emphasis !default
+$success: $brand-success !default
+$warning: $yellow !default
+$danger: $red !default
+
+$light: $white-ter !default
+$dark: $grey-darker !default
+
+// Invert colors
+
+$orange-invert: findColorInvert($orange) !default
+$yellow-invert: findColorInvert($yellow) !default
+$green-invert: findColorInvert($green) !default
+$turquoise-invert: findColorInvert($turquoise) !default
+$cyan-invert: findColorInvert($cyan) !default
+$blue-invert: findColorInvert($blue) !default
+$purple-invert: findColorInvert($purple) !default
+$red-invert: findColorInvert($red) !default
+
+$brand-primary-invert: 	 findColorInvert($brand-primary) !default
+$brand-secondary-invert: 	 findColorInvert($brand-secondary) !default
+$brand-info-invert: 	 findColorInvert($brand-info) !default
+$brand-success-invert: 	 findColorInvert($brand-success) !default
+$brand-emphasis-invert: 	 findColorInvert($brand-emphasis) !default
+
+$primary-invert: $brand-primary-invert !default
+$secondary-invert: $brand-secondary-invert !default
+$emphasis-invert: $brand-emphasis-invert !default
+$info-invert: $brand-info-invert  !default
+$success-invert: $brand-success-invert !default
+$warning-invert: $yellow-invert !default
+$danger-invert: $red-invert !default
+$light-invert: $dark !default
+$dark-invert: $light !default
+
+// General colors
+
+$background: $white-ter !default
+
+$border: $grey-lighter !default
+$border-hover: $grey-light !default
+
+// Text colors
+
+$text: $grey-dark !default
+$text-invert: findColorInvert($text) !default
+$text-light: $grey !default
+$text-strong: $grey-darker !default
+
+// Code colors
+
+$code: $red !default
+$code-background: $background !default
+
+$pre: $text !default
+$pre-background: $background !default
+
+// Link colors
+
+$link: $blue !default
+$link-invert: $blue-invert !default
+$link-visited: $purple !default
+
+$link-hover: $grey-darker !default
+$link-hover-border: $grey-light !default
+
+$link-focus: $grey-darker !default
+$link-focus-border: $blue !default
+
+$link-active: $grey-darker !default
+$link-active-border: $grey-dark !default
+
+// Typography
+
+$family-primary: $family-sans-serif !default
+$family-code: $family-monospace !default
+
+$size-small: $size-7 !default
+$size-normal: $size-6 !default
+$size-medium: $size-5 !default
+$size-large: $size-4 !default
+$size-xlarge: $size-3 !default
+
+// Lists and maps
+$custom-colors: null !default
+$custom-shades: null !default
+
+$colors: mergeColorMaps(("white": ($white, $black), "black": ($black, $white), "light": ($light, $light-invert), "dark": ($dark, $dark-invert), "primary": ($primary, $primary-invert), "secondary": ($secondary, $secondary-invert), "emphasis": ($emphasis, $emphasis-invert), "link": ($link, $link-invert), "info": ($info, $info-invert), "success": ($success, $success-invert), "warning": ($warning, $warning-invert), "danger": ($danger, $danger-invert)), $custom-colors) !default
+$shades: mergeColorMaps(("black-bis": $black-bis, "black-ter": $black-ter, "grey-darker": $grey-darker, "grey-dark": $grey-dark, "grey": $grey, "grey-light": $grey-light, "grey-lighter": $grey-lighter, "white-ter": $white-ter, "white-bis": $white-bis), $custom-shades) !default
+
+
+$sizes: $size-1 $size-2 $size-3 $size-4 $size-5 $size-6 $size-7 !default
